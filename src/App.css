@@ -1,0 +1,130 @@
+@keyframes buttonEffect {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th,
+td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+button {
+  padding: 6px 10px;
+  background-color: rgb(183, 22, 195);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.container button.clicked {
+  animation: buttonEffect 0.5s;
+}
+
+.container {
+  display: flex;
+  height: 75vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container h1 {
+  font-size: 50px;
+  font-family: Avantt, sans-serif;
+  font-weight: 800;
+  color: white;
+  background: -webkit-linear-gradient(rgb(71, 70, 145), #eee);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+}
+
+.container h1 span {
+  background: -webkit-linear-gradient(#eee, #da919f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.container input {
+  width: 300px; /* Adjust the width as needed */
+  height: 50px;
+  outline: none;
+  border: none;
+  font-size: 20px;
+  font-family: Avantt, sans-serif;
+  font-weight: 800;
+  text-align: center;
+  border-radius: 25px; /* Make the input round */
+  background-color: #f2f2f2;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.container input:hover {
+  background-color: #eaeaea;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.container input:focus {
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.container input::placeholder {
+  color: #999;
+  font-weight: normal;
+}
+
+.container button {
+  width: 150px;
+  height: 50px;
+  margin-top: 10px;
+  font-size: 20px;
+  font-family: Avantt, sans-serif;
+  font-weight: 600;
+  border: none;
+  outline: none;
+  border-radius: 25px;
+  background-color: rgb(183, 22, 195);
+  color: white;
+  letter-spacing: 3px;
+  background-image: linear-gradient(rgb(71, 70, 145), #09e243);
+}
+
+.container button.clicked {
+  animation: buttonEffect 0.5s;
+}
+
+.result {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.result p {
+  border: 1px solid white;
+  padding: 10px;
+  font-size: 20px;
+  color: white;
+  margin-top: 40px;
+}
