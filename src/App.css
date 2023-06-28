@@ -28,7 +28,7 @@ th {
 
 button {
   padding: 6px 10px;
-  background-color: rgb(183, 22, 195);
+  background-color: rgb(36, 195, 22);
   color: white;
   border: none;
   border-radius: 4px;
@@ -127,4 +127,16 @@ button {
   font-size: 20px;
   color: white;
   margin-top: 40px;
+}
+
+nav ul li a {
+  color: rgb(162, 255, 0); 
+}
+
+nav ul li a:hover {
+  color: red; 
+}
+
+nav ul li a.active {
+  color: green; 
 }
